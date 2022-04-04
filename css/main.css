@@ -33,7 +33,7 @@ h5 {
   font-family: 'Courier New', Courier, monospace;
   color: rgba(255, 255, 255, 0.925); }
 
-.btn, .otro {
+.btn {
   color: white !important;
   font-family: "Courier New", Courier, monospace;
   background-color: #008080	!important;
@@ -76,6 +76,9 @@ h5 {
   color: #fff;
   width: 50px;
   height: 30px; }
+
+h4 {
+  text-align: center !important; }
 
 @media (min-width: 370px) and (max-width: 371px) {
   #botonera img[src="./img/Logo.svg"] {

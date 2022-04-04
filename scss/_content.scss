@@ -42,6 +42,13 @@
  
  );
 
+ @mixin titUno($fise, $align,$margin) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: $fise;
+  text-align: $align;
+  margin:$margin;
+
+ }
 @mixin container($height,$width,$display,$direction,$justify) {
   height: $height;
   width: $width;
@@ -57,15 +64,32 @@
   text-align: $align;
   margin:$margin;
 
+  
  }
+
+ @mixin tituloTres($font-size, $textDosAlign,$margin) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: $font-size;
+  text-align: $textDosAlign;
+  margin:$margin;
+ }
+
+
+
 
  h2{
     @include tituloDos(50px, center,top 30px )
  }
+
+
  h5{
   background-color: map-get($map: $coloresDestacados, $key: 'ocho');
   font-family: 'Courier New', Courier, monospace;
   color:hsla(150, 100%, 100%, 0.925);
+}
+
+.card-titleDos{
+  @extend .card-title;
 }
 .btn
 {
@@ -73,13 +97,6 @@
   font-family: "Courier New", Courier, monospace;
   background-color: #008080	!important;
    border: solid 5;
-}
- 
- .otro{
-  @extend .btn;
-}
-.card-titleDos{
-  @extend .card-title;
 }
  #respuesta {
   font-family: "Roboto Condensed", sans-serif;
@@ -89,3 +106,4 @@
   }
 
 
+ 
