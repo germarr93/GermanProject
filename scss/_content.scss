@@ -6,7 +6,6 @@
   .card-text {
     font-family: "Courier New", Courier, monospace;
     text-align: center;
-
     .card a {
       color: rgb(44, 23, 231);
       background: linear-gradient(
@@ -74,7 +73,9 @@
   margin:$margin;
  }
 
-
+p{
+  text-align: justify;
+}
 
 
  h2{
@@ -91,6 +92,7 @@
 .card-titleDos{
   @extend .card-title;
 }
+
 .btn
 {
   color: white !important;
