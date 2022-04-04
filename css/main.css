@@ -53,9 +53,9 @@ p {
 
 #respuestaDos {
   font-family: "Roboto Condensed", sans-serif;
-  text-align: right;
+  text-align: center;
   border: solid 2px;
-  margin-left: 80% !important; }
+  margin-left: 76% !important; }
 
 .botonera {
   font-family: "Roboto Condensed", sans-serif, 50px, margin-top 30px;
