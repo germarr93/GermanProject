@@ -1,0 +1,22 @@
+.botonera {
+  font-family: $titulos;
+  text-align: $tex;
+}
+.titulo {
+  font-family: $fontMain;
+  font-size: $fsize;
+  text-align: $textC;
+  margin-top: 30px;
+}
+#navbarCollapse1 {
+  font-size: 1.4em;
+  font-family: $titulos;
+}
+#navbarCollapse2
+{
+  font-size: 1.4em;
+  font-family: $titulos;
+}
+#selector .card:first-child {
+  color: rgb(2, 0, 0);
+}

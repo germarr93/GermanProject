@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.card-title, .card-titleDos {
+  color: rgba(255, 255, 255, 0.925);
+  text-align: center;
+  background-color: rgba(5, 0, 0, 0.548);
+}
+
+.card-title .card-text, .card-titleDos .card-text {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.card-title .card-text .card a, .card-titleDos .card-text .card a {
+  color: #2c17e7;
+  background: -webkit-gradient(linear, bottom bottom, from(rgba(122, 16, 243, 0.5)), to(rgba(71, 93, 153, 0.5)));
+  background: linear-gradient(top top, rgba(122, 16, 243, 0.5), rgba(71, 93, 153, 0.5));
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  background-color: #0d7474;
+}
+
+.card a .card-title .card-text .card a:hover, .card a .card-titleDos .card-text .card a:hover {
+  background-color: #074202;
+  color: #fff;
+}
+
+.card {
+  margin-top: 5%;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  text-align: center;
+  margin: top 30px;
+}
+
+h5 {
+  background-color: #34495E;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+.btn, .otro {
+  color: white !important;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #008080	!important;
+  border: solid 5;
+}
+
+#respuesta {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+  border: solid 2px;
+  margin-top: 2px !important;
+}
+
+.botonera {
+  font-family: "Roboto Condensed", sans-serif, 50px, margin-top 30px;
+  text-align: center;
+}
+
+.titulo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#navbarCollapse1 {
+  font-size: 1.4em;
+  font-family: "Roboto Condensed", sans-serif, 50px, margin-top 30px;
+}
+
+#navbarCollapse2 {
+  font-size: 1.4em;
+  font-family: "Roboto Condensed", sans-serif, 50px, margin-top 30px;
+}
+
+#selector .card:first-child {
+  color: #020000;
+}
+
+.Respuesta {
+  font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+  border: solid 2px;
+}
+
+.contenedor-icono svg {
+  color: #fff;
+  width: 50px;
+  height: 30px;
+}
+
+@media (min-width: 370px) and (max-width: 371px) {
+  #botonera img[src="./img/Logo.svg"] {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

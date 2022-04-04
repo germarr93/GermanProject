@@ -1,0 +1,16 @@
+.Respuesta {
+  font-size: $fsize;
+  font-family: $fontGeneral;
+  text-align: $textRight;
+  border: $border;
+}
+.contenedor-icono svg {
+  color: #fff;
+  width: 50px;
+  height: 30px;
+}
+@media (min-width: 370px) and (max-width: 371px) {
+  #botonera img[src="./img/Logo.svg"] {
+    width: 100px;
+  }
+}

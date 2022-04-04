@@ -1,0 +1,91 @@
+.card-title {
+  color: hsla(150, 100%, 100%, 0.925);
+  text-align: center;
+  background-color: hsla(0, 100%, 1%, 0.548);
+
+  .card-text {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+
+    .card a {
+      color: rgb(44, 23, 231);
+      background: linear-gradient(
+        top top,
+        rgba(122, 16, 243, 0.5),
+        rgba(71, 93, 153, 0.5)
+      );
+      transition: all 2s;
+      background-color: #0d7474;
+
+      .card a &:hover {
+        background-color: rgb(7, 66, 2);
+        color: #fff;
+      }
+    }
+  }
+}
+  .card{
+    margin-top: 5%;
+  }
+
+// Maps,Mixins----------------------------------------------------------------------------->
+
+ $coloresDestacados:(
+  'uno':hsla(150, 100%, 100%, 0.925),
+  'dos': #0d7474e0,
+  'tres':rgb(2, 0, 0),
+  'cuatro':rgba(255, 255, 255, 0.925),
+  'cinco':rgba(122, 16, 243, 0.5),
+  'seis':#0d7474,
+  'siete':rgb(177, 189, 204),
+  'ocho':#34495E
+ 
+ );
+
+@mixin container($height,$width,$display,$direction,$justify) {
+  height: $height;
+  width: $width;
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+ }
+
+
+ @mixin tituloDos($font-size, $align,$margin) {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: $font-size;
+  text-align: $align;
+  margin:$margin;
+
+ }
+
+ h2{
+    @include tituloDos(50px, center,top 30px )
+ }
+ h5{
+  background-color: map-get($map: $coloresDestacados, $key: 'ocho');
+  font-family: 'Courier New', Courier, monospace;
+  color:hsla(150, 100%, 100%, 0.925);
+}
+.btn
+{
+  color: white !important;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #008080	!important;
+   border: solid 5;
+}
+ 
+ .otro{
+  @extend .btn;
+}
+.card-titleDos{
+  @extend .card-title;
+}
+ #respuesta {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+  border: solid 2px;
+  margin-top: 2px !important;
+  }
+
+

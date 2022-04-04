@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Hard Rock Cafe - Formulario de contratacion de cliente </title>
+	<meta name="description" content="Aqui presentamos un formulario para que puedas trabajar en la cafeteria,
+	si estas en la busqueda de trabajo y tener tu experiencia laboral completando con toda tu informacion tenes 
+	todo para poder comenzar con nosotros.">
+	<meta name="author" content="German Marr creador de la pagina web">
+	<meta name="keywords" content="enviar informacion laboral, trabajos nuevos, enviar curriculum para trabajar, laburos, dinero, empresas de rock, cafeterias cercas, 
+	experiencia laboral en cafeterias, trabajos nuevos">
+	<meta name="copyright" content="Hard Rock Cafe">
+	<meta name="robots" content="index,nofollow">
+	<!-- Link de Css -->
+	<link rel="stylesheet" href="../css/main.css">
+	<!-- Link de Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- Link de Iconos -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<header>
+		<!-- Inicia Nav -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="botonera">
+			<div class=" container-fluid">
+				<a href="../index.html" class="navbar-brand">
+					<img src="../img/Logo.svg" alt="logo de Empresa">
+				</a>
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse1">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse1">
+					<div class="navbar-nav">
+						<a href="../index.html" class="nav-item nav-link">Home</a>
+						<a href="../pages/estamosContratando.html" class="nav-item nav-link active">Unite</a>
+						<a href="../pages/tienda.html" class="nav-item nav-link ">Tienda</a>
+						<a href="../pages/nosotros.html" class="nav-item nav-link">Nosotros</a>
+						<a href="../pages/beneficios.html" class="nav-item nav-link">Beneficios</a>
+						<a href="../pages/contacto.html" class="nav-item nav-link">Contacto</a>
+					</div>
+					<form class="d-flex ms-auto">
+						<input type="text" class="form-control me-sm-2" placeholder="Search">
+						<button type="submit" class="btn btn-outline-light">Busqueda</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- ends nav -->
+	</header>
+	<!-- ends header -->
+	<!-- starts main -->
+	<main>
+		<!-- start container-form -->
+		<div class="container-fluid px-1 py-5 mx-auto ">
+			<div class="row d-flex justify-content-center">
+				<div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+					<h1>Forma parte de nuestra Empresa</h1>
+					<p id="parrafo">Aqui puedes completar tu formulario</p>
+					<div class="cardContacto">
+						<h5 class="text-center mb-4">Ingresa tus datos</h5>
+						<form class="form-card" onsubmit="event.preventDefault()">
+							<div class="row justify-content-between text-left">
+								<div class="form-group col-sm-6 flex-column d-flex"> <label
+										class="form-control-label px-3">Primer Nombre<span class="text-danger">
+											*</span></label> <input type="text" id="fname" name="fname"
+										placeholder="Poner tu primer nombre" onblur="validate(1)"> </div>
+								<div class="form-group col-sm-6 flex-column d-flex"> <label
+										class="form-control-label px-3">Segundo Nombre<span class="text-danger">
+											*</span></label>
+									<input type="text" id="lname" name="lname" placeholder="Poner tu segundo nombre"
+										onblur="validate(2)">
+								</div>
+							</div>
+							<div class="row justify-content-between text-left">
+								<div class="form-group col-sm-6 flex-column d-flex"> <label
+										class="form-control-label px-3">Email<span class="text-danger">
+											*</span></label> <input type="text" id="email" name="email"
+										placeholder="Poner email" onblur="validate(3)"> </div>
+								<div class="form-group col-sm-6 flex-column d-flex"> <label
+										class="form-control-label px-3">Numero de telefono<span class="text-danger">
+											*</span></label> <input type="text" id="mob" name="mob"
+										placeholder="Poner numero" onblur="validate(4)"> </div>
+							</div>
+							<div class="row justify-content-between text-left">
+								<div class="form-group col-sm-6 flex-column d-flex"> <label
+										class="form-control-label px-3">Puesto a ocupar<span class="text-danger">
+											*</span> </label>
+									<input type="text" id="job" name="job" placeholder="" onblur="validate(5)">
+								</div>
+							</div>
+							<div class="row justify-content-between text-left">
+								<div class="form-group col-12 flex-column d-flex"> <label
+										class="form-control-label px-3">Por que te gustaria trabajar con Nosotros?<span
+											class="text-danger"> *</span></label> <input type="text" id="ans" name="ans"
+										placeholder="" onblur="validate(6)"> </div>
+							</div>
+							<div class="row justify-content-end">
+								<div class="form-group col-sm-6">
+									<button type="button" class="btn btn-dark" id="respuesta">Enviar
+										Informacion</button>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ends form -->
+	</main>
+	<!-- ends main -->
+	<!-- start footer -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="contenedor-icono">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-twitter" viewBox="0 0 16 16">
+						<path
+							d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-facebook" viewBox="0 0 16 16">
+						<path
+							d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-google" viewBox="0 0 16 16">
+						<path
+							d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Ends footer -->
+
+	<!-- Js Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- ends Js Bootstrap -->
+
+</body>
+
+</html>
