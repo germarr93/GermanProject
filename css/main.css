@@ -22,8 +22,10 @@
 .card {
   margin-top: 5%; }
 
-p {
-  text-align: justify; }
+h5 {
+  background-color: #34495E;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(255, 255, 255, 0.925); }
 
 h2 {
   font-family: 'Courier New', Courier, monospace;
@@ -31,10 +33,8 @@ h2 {
   text-align: center;
   margin: top 30px; }
 
-h5 {
-  background-color: #34495E;
-  font-family: 'Courier New', Courier, monospace;
-  color: rgba(255, 255, 255, 0.925); }
+p {
+  text-align: justify; }
 
 .btn {
   color: white !important;
@@ -42,11 +42,20 @@ h5 {
   background-color: #008080	!important;
   border: solid 5; }
 
+.btn-outline-light {
+  text-align: center; }
+
 #respuesta {
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
   border: solid 2px;
   margin-top: 2px !important; }
+
+#respuestaDos {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: right;
+  border: solid 2px;
+  margin-left: 80% !important; }
 
 .botonera {
   font-family: "Roboto Condensed", sans-serif, 50px, margin-top 30px;

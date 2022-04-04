@@ -72,26 +72,23 @@
   text-align: $textDosAlign;
   margin:$margin;
  }
-
-p{
-  text-align: justify;
-}
-
-
- h2{
-    @include tituloDos(50px, center,top 30px )
- }
-
-
  h5{
   background-color: map-get($map: $coloresDestacados, $key: 'ocho');
   font-family: 'Courier New', Courier, monospace;
   color:hsla(150, 100%, 100%, 0.925);
 }
-
+h2{
+  @include tituloDos(50px, center,top 30px )
+}
 .card-titleDos{
   @extend .card-title;
 }
+
+
+p{
+  text-align: justify;
+}
+ 
 
 .btn
 {
@@ -100,12 +97,23 @@ p{
   background-color: #008080	!important;
    border: solid 5;
 }
+.btn-outline-light{
+text-align: center;
+
+}
  #respuesta {
   font-family: "Roboto Condensed", sans-serif;
   text-align: right;
   border: solid 2px;
   margin-top: 2px !important;
   }
+ #respuestaDos{
 
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: right;
+    border: solid 2px;
+    margin-left: 80% !important;
+    }
+ 
 
  
