@@ -101,5 +101,11 @@ h4 {
   text-align: center !important; }
 
 @media (min-width: 370px) and (max-width: 371px) {
-  #botonera img[src="./img/Logo.svg"] {
-    width: 100px; } }
+        #botonera img[src="./img/Logo.svg"] {
+         width: 200px; } }
+ @media only screen  and (min-width : 1224px) {
+            #botonera img[src="./img/Logo.svg"] {
+              width: 100px; }}
+@media only screen and (min-width: 992px) { 
+      #botonera img[src="./img/Logo.svg"] {
+              width: 200px; }}
